@@ -11,7 +11,7 @@
 	<groupId>com.toniomg</groupId>
 	<artifactId>song-creator-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>song-creator-backend</name>
 	<description>Backend Support for Song Creator</description>
 
