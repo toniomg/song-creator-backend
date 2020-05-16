@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('Download') {
          steps {
-            git 'https://github.com/toniomg/song-creator.git'
+            git 'https://github.com/toniomg/song-generator-backend.git'
          }
       }
 

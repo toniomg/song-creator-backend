@@ -9,6 +9,8 @@ import static org.mockito.MockitoAnnotations.initMocks;
 
 import com.toniomg.songcreatorbackend.model.Song;
 import com.toniomg.songcreatorbackend.model.SongRepository;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import org.junit.Before;
@@ -37,8 +39,8 @@ public class SongControllerTest {
     Song songA = new Song( "Guns N Roses", "Sweet Child of mine", true);
     Song songB = new Song( "The Eagles", "Hotel California");
 
-    List<Song> songs = List.of(songA, songB);
-    when(songRepository.findAll()).thenReturn(List.of(songA, songB));
+    List<Song> songs = Arrays.asList(songA, songB);
+    when(songRepository.findAll()).thenReturn(songs);
 
     assertEquals(songController.getAllSongs(), songs);
   }

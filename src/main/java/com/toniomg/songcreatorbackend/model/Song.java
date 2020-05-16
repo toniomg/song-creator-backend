@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import java.util.List;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import jdk.jfr.DataAmount;
 import lombok.Data;
 
 @Entity
