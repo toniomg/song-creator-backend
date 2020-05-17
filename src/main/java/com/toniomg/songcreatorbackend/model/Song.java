@@ -20,12 +20,13 @@ public class Song {
     public Song() {};
 
     public Song(String author, String name, boolean isPublic) {
+        this.author = author;
         this.name = name;
         this.isPublic = isPublic;
     }
 
     public Song(String author, String name) {
-        super();
+        this.author = author;
         this.name = name;
         this.isPublic = true;
     }
@@ -36,9 +37,6 @@ public class Song {
     private String author;
     private String name;
     private boolean isPublic;
-
-//    private List<String> chordPattern;
-//    private List<Strum> strummingPattern;
 
 
 }

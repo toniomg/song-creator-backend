@@ -46,6 +46,14 @@ public class SongControllerTest {
   }
 
   @Test
+  public void shouldReturnEmptyList() {
+
+    when(songRepository.findAll()).thenReturn(new ArrayList<>());
+
+    assertEquals(songController.getAllSongs(), new ArrayList<>());
+  }
+
+  @Test
   public void shouldAddOneSong() {
     Song songA = new Song( "Guns N Roses", "Sweet Child of mine", true);
     songController.addSong(songA);
